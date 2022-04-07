@@ -21,3 +21,9 @@
     {% do return('9999-12-31 23:59:59.999999') %}
 
 {% endmacro -%}
+
+{%- macro spark__max_datetime() %}
+
+    {% do return('9999-12-31 23:59:59.999999') %}
+
+{% endmacro -%}
