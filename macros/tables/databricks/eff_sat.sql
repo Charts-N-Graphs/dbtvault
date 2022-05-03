@@ -1,11 +1,3 @@
-{%- macro eff_sat(src_pk, src_dfk, src_sfk, src_start_date, src_end_date, src_eff, src_ldts, src_source, source_model) -%}
-
-    {{- adapter.dispatch('eff_sat', 'dbtvault')(src_pk=src_pk, src_dfk=src_dfk, src_sfk=src_sfk,
-                                                src_start_date=src_start_date, src_end_date=src_end_date,
-                                                src_eff=src_eff, src_ldts=src_ldts, src_source=src_source,
-                                                source_model=source_model) -}}
-{%- endmacro -%}
-
 {%- macro spark__eff_sat(src_pk, src_dfk, src_sfk, src_start_date, src_end_date, src_eff, src_ldts, src_source, source_model) -%}
 
 {{- dbtvault.check_required_parameters(src_pk=src_pk, src_dfk=src_dfk, src_sfk=src_sfk,
